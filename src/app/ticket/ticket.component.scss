@@ -1,0 +1,39 @@
+.ticket {
+  background: #fff;
+  border: 1px solid #DFE5EC;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%), 0 4px 4px rgb(0 0 0 / 5%);
+
+  &-header {
+    margin-bottom: 25px;
+  }
+
+  &-price {
+    color: #2F80ED;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &-direction {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-info {
+    & .top {
+      text-transform: uppercase;
+      color: #A0B0B9;
+    }
+
+    & .bottom {
+      font-weight: 700;
+    }
+  }
+
+}
