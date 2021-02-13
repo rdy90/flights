@@ -6,6 +6,7 @@ import { BoardComponent } from './board/board.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TabsComponent } from './tabs/tabs.component';
     BoardComponent,
     TicketListComponent,
     TicketComponent,
-    TabsComponent
+    TabsComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule
