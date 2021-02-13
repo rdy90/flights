@@ -1,0 +1,22 @@
+@import "../variables";
+
+.ticket-list {
+
+  & .show-more {
+    background: $blue;
+    color: $white;
+    border-radius: $border-radius;
+    border: 0;
+
+    width: 100%;
+    padding: 20px;
+
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+
+    &:hover {
+      background: lighten($blue, 5%);
+    }
+  }
+}

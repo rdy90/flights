@@ -1,3 +1,5 @@
+@import "../variables";
+
 .tabs {
   ul {
     flex: 0 0 auto;
@@ -6,37 +8,37 @@
 
     li {
       padding: 20px;
-      background-color: #fff;
+      background-color: $white;
 
       font-size: 12px;
 
       text-align: center;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 600;
 
-      border-right: 1px solid #DFE5EC;
-      border-top: 1px solid #DFE5EC;
-      border-bottom: 1px solid #DFE5EC;
+      border-right: 1px solid $border-color-grey;
+      border-top: 1px solid $border-color-grey;
+      border-bottom: 1px solid $border-color-grey;
 
       &:first-child {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
       }
 
       &:last-child {
         border-right: 0;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-right: 1px solid #DFE5EC;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        border-right: 1px solid $border-color-grey;
       }
 
       &:hover {
         cursor: pointer;
-        background: lighten(#2F80ED, 41%);
+        background: $bg-color-active-hover;
       }
 
       &.active {
-        background-color: #2F80ED;
+        background-color: $blue;
         color: #fff;
         font-weight: normal;
       }
