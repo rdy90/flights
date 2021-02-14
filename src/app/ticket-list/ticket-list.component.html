@@ -1,7 +1,4 @@
-<div class="ticket-list">
-  <app-ticket></app-ticket>
-  <app-ticket></app-ticket>
-  <app-ticket></app-ticket>
-
-  <button class="show-more">Показать еще 5 билетов!</button>
+<div class="ticket-list" *ngFor="let ticket of tickets;">
+  <app-ticket [ticket]="ticket"></app-ticket>
 </div>
+<button class="ticket-list-more">Показать еще 5 билетов!</button>

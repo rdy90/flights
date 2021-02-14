@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Ticket} from '../models';
 
 @Component({
   selector: 'app-ticket-list',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketListComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  public tickets!: Ticket[];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

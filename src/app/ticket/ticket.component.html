@@ -1,10 +1,10 @@
 <div class="ticket">
   <div class="ticket-header row">
     <div class="col-md-8">
-      <span class="ticket-price">13 400 Р</span>
+      <span class="ticket-price">{{ticket.price | getPrice}}</span>
     </div>
     <div class="col-md-4">
-      <img src="http://pics.avs.io/99/36/FV.png" alt="">
+      <img src="http://pics.avs.io/99/36/{{ticket.carrier}}.png" alt="">
     </div>
   </div>
   <div class="ticket-info">
